@@ -19,12 +19,13 @@ conectarDB();
 app.use(express.json({extended: true}));
 
 //PUERTO DE LA APP
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4001;
 
 //Importar Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/proyectos', require('./routes/proyectos'));
+app.use('/api/tareas', require('./routes/tareas'));
 
 //ARRANCA LA APP
 app.listen(PORT, ()=>{
