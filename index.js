@@ -5,12 +5,15 @@
 //npm install bcryptjs = para ocultar passwords
 //npm i express-validator
 //npm install jsonwebtoken
+//Commit desde Macbooks
+//Linea 2 
+
 
 const express = require('express');
 const conectarDB = require('./config/db');
 
 //Crear el servidor
-const app = express();
+const app = express();s
  
 //Conectar a la base de Datos
 conectarDB();
