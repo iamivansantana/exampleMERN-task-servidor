@@ -13,7 +13,7 @@ const express = require('express');
 const conectarDB = require('./config/db');
 
 //Crear el servidor
-const app = express();s
+const app = express();
  
 //Conectar a la base de Datos
 conectarDB();
