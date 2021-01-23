@@ -5,15 +5,20 @@
 //npm install bcryptjs = para ocultar passwords
 //npm i express-validator
 //npm install jsonwebtoken
+//npm i cors
 
 const express = require('express');
 const conectarDB = require('./config/db');
+const cors = require('cors');
 
 //Crear el servidor
 const app = express();
  
 //Conectar a la base de Datos
 conectarDB();
+
+//Habilitar cors (para recibir peticiones de una url diferente)
+app.use(cors());
 
 //habilitar express.json
 app.use(express.json({extended: true}));
